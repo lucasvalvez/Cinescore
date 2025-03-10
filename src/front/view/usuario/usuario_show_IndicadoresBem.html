@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/cores.css">
+    <link rel="stylesheet" href="../../assets/css/auxilio.css">
+    <link rel="stylesheet" href="../../assets/css/usuario_show_indicadores.css">
+    <link rel="stylesheet" href="../../assets/css/ondas.css">
+    <link rel="stylesheet" href="../../assets/css/indicadores.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../../assets/css/graficos.css">
+
+
+    <title>CineScore</title>
+</head>
+
+<body class="layoutBody ">
+
+    <header class="color_paleta01 P layoutHeader h180 flex coluna">
+
+        <section class="layoutBandeiraPrincipal w-100">
+            <div class="flex aCentro gap-3 w-100">
+                <a href="../cine.html">
+                    <div><img class="h48 op-80 botaoAnima" src="../../assets/img/LogoCineScore.png" alt=""></div>
+                </a>
+                <a class="textUnd" href="./cine.html">
+                    <div class="op-90 botaoAnima"><strong class="font_whiteA">Inicio</strong></div>
+                </a>
+                <a class="textUnd" href="./movie_lista.html">
+                    <div class="op-90 botaoAnima"><strong class="font_whiteA">Filmes</strong></div>
+                </a>
+                <a class="textUnd" href="./serie_lista.html">
+                    <div class="op-90 botaoAnima"><strong class="font_whiteA">Series</strong></div>
+                </a>
+                <a class="textUnd" href="./usuario_show_meus_favoritos.html">
+                    <div class="op-90 botaoAnima"><strong class="font_whiteA">Meus favoritos</strong></div>
+                </a>
+            </div>
+
+        </section>
+
+
+        <div class="flex aCentro gap-3 layoutBandeira fundoBandeiraRoxa">
+
+        </div>
+
+    </header>
+
+    <main class="layoutMain P pt-5  ">
+
+        <div class="layoutCima P    ">
+
+            <div class="P layoutAcoes">
+                <div class="sombra1 radius_All_-10-">
+                    <div class="P h48 color_verdeMar radius_TL-TR_-10- centro"><Strong class="font_white">Ações</Strong>
+                    </div>
+                    <div class="w-100 radius_BL-BR_-10- pt-2 pb-2">
+                        <a href="./usuario_show_IndicadoresBem.html" class="textUnd font_blackA"><div id="indicadores" class="ps-4 aCentro h40 botaoCard botaoAnimaBom">Titulos melhores avaliados</div></a>
+                        <a href="./usuario_show_IndicadoresMal.html" class="textUnd font_blackA"><div id="indicadores" class="ps-4 aCentro h40 botaoCard botaoAnimaBom">Titulos piores avaliados</div></a>
+                        <a href="./usuario_show_IndicadoresComentarios.html" class="textUnd font_blackA"><div id="indicadores" class="ps-4 aCentro h40 botaoCard botaoAnimaBom">Titulos mais comentados</div></a>
+
+                        <div id="logout" class="ps-4 aCentro h40 botaoCard botaoAnimaRuim">Logout</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="P layoutInformacoes">
+
+                <div class="rolagemX cartaoHV P layoutFavoritos flex centro coluna">
+                    <section class="movies-container favorites ">
+
+                        <div class="titulosBemAvaliados flex centro fw gap-3">
+
+                        </div>
+
+                    </section>
+                </div>
+
+                
+
+            </div>
+
+            <div>
+                <p id="porcentagem" class="centro">?% dos titulos são avaliados positivamente</p>
+                <canvas id="likeChart">
+
+            
+                </canvas>
+            </div>
+            
+
+        </div>
+
+    </main>
+
+    <div class="popup-container">
+        <span class="x-icon">&#10006;</span>
+        <div class="content">
+            <div class="left">
+                <div class="poster-img">
+                    <img src="https://unsplash.it/500/1000" alt="Movie Poster">
+                </div>
+                <div class="single-info">
+                    <span>Add to favorites:</span>
+                    <span class="heart-icon">&#9829;</span>
+                </div>
+                <button class="my-list-button"><i class="fa fa-plus" aria-hidden="true"></i> My List</button>
+            </div>
+            <div class="right">
+                <h1>Movie Title</h1>
+                <h3>Movie Tagline</h3>
+                <div class="single-info-container">
+                    <div class="single-info">
+                        <span>Language:</span>
+                        <span>English</span>
+                    </div>
+                    <div class="single-info">
+                        <span>Length:</span>
+                        <span>120 minutes</span>
+                    </div>
+                    <div class="single-info">
+                        <span>Rate:</span>
+                        <span>10 / 10</span>
+                    </div>
+                    <div class="single-info">
+                        <span>Release Date:</span>
+                        <span>05-07-2022</span>
+                    </div>
+                </div>
+                <div class="genres">
+                    <h2>Genres</h2>
+                    <ul>
+                        <li>Action</li>
+                        <li>Drama</li>
+                        <li>Romance</li>
+                    </ul>
+                </div>
+                <div class="overview">
+                    <h2>Overview</h2>
+                    <p></p>
+                </div>
+                <div class="comments-section">
+                    <h2>Comentários</h2>
+                    <textarea placeholder="Deixe seu comentário aqui"></textarea>
+                    <button class="comment-btn">Comentar</button>
+                    <ul class="comment-list"></ul>
+                </div>
+                <div class="rating-section">
+                    <h2>Avaliação</h2>
+                    <div class="stars">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+<script src="../../assets/js/usuario_indicadores_bem.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+</html>

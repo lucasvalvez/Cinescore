@@ -1,0 +1,68 @@
+
+.form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    padding: 1rem;
+}
+  
+  .waves{
+   position: absolute; 
+   bottom: 0;
+   left: 0;
+   right: 0;
+   z-index: 1;
+   pointer-events: none;
+  }
+  
+  .wave-1{
+     animation: animationWave1 2.2s ease-in-out infinite alternate;
+  }
+  
+  .wave-2{
+    animation: animationWave2 2.4s 1.2s ease-in-out infinite alternate;
+  }
+  
+  .wave-3{
+    animation: animationWave3 2.6s 0.7s ease-in-out infinite alternate;
+  }
+
+  .wave-4{
+    animation: animationWave4 2.8s 0.7s ease-in-out infinite alternate;
+  }
+
+  .wave-5{
+    animation: animationWave5 3s 0.7s ease-in-out infinite alternate;
+  }
+  
+  @keyframes animationWave1{
+    from {
+      transform: translatex(-4000px);
+    }
+  }
+  
+  @keyframes animationWave2{
+    from {
+      transform: translatex(-3500px);
+    }
+  }
+  
+  @keyframes animationWave3{
+    from {
+      transform: translatex(3000px);
+    }
+  }
+
+  @keyframes animationWave4{
+    from {
+      transform: translatex(1000px);
+    }
+  }
+  
+  @keyframes animationWave5{
+    from {
+      transform: translatex(-4000px);
+    }
+  }

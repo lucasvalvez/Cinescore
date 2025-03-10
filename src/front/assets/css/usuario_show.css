@@ -1,0 +1,211 @@
+.layoutBody{
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+}
+
+.layoutHeader {
+    display: grid;
+    row-gap: 16px;
+    column-gap: 16px;
+    grid-template-columns: auto ;
+    grid-template-rows: auto min-content;
+}
+
+.layoutMain {
+    display: grid;
+    row-gap: 16px;
+    column-gap: 32px;
+    padding: 16px;
+    grid-template-columns: auto;
+    grid-template-rows:  min-content ;
+    grid-template-areas:
+    "layoutCima"
+    "layoutFavoritos";
+    z-index: 0;
+}
+
+.layoutCima{
+    grid-area: layoutCima;
+    display: grid;
+    row-gap: 16px;
+    column-gap: 32px;
+    padding: 16px;
+    grid-template-columns: auto auto ;
+    grid-template-rows:  min-content;
+    grid-template-areas:
+    "layoutAcoes layoutInformacoes";
+    z-index: 0;
+}
+
+.layoutAcoes {
+    grid-area: layoutAcoes;
+    width: 100%; 
+    max-width: 100%;    
+    padding-left:20%;
+}
+
+.layoutInformacoes {
+    grid-area: layoutInformacoes;
+    width: 100%; 
+    max-width: 100%;    
+    padding-right:20%;
+}
+
+.layoutFavoritos {
+    grid-area: layoutFavoritos;
+    width: 100%; 
+    max-width: 100%;
+}
+
+.layoutFooter {
+    display: grid;
+    padding: 16px;
+    grid-template-columns: auto;
+    grid-template-rows: min-content min-content;
+}
+
+.layoutAlterarDisponibilidade {
+    display: grid;
+    row-gap: 16px;
+    column-gap: 16px;
+    grid-template-columns: min-content min-content;
+}
+
+.layoutEmailSenha {
+    display: grid;
+    row-gap: 16px;
+    column-gap: 16px;
+    grid-template-columns: auto auto;
+}
+
+.layoutSalvarRemover {
+    display: grid;
+    row-gap: 16px;
+    column-gap: 16px;
+    grid-template-columns: min-content min-content;
+}
+
+.pb-64{
+    padding-bottom: 64px;
+}
+
+.fundoBandeiraRoxa{
+   background-image: url(../img/bandeiraRoxa.png); 
+   min-height: 80px;
+}
+
+.escuro{
+    filter: brightness(0%);
+}
+
+.layoutBandeiraPrincipal {
+    display: grid;
+    row-gap: 16px;
+    column-gap: 16px;
+    padding-top: 12px;
+    padding-left: 7%;
+    padding-right: 2%;
+    grid-template-columns: auto min-content ; 
+}
+
+.layoutBandeira {
+   padding-left: 15%;  
+}
+
+@media only screen and (max-width: 1050px) {
+    
+    .layoutSalvarRemover {
+        display: grid;
+        row-gap: 16px;
+        column-gap: 16px;
+        grid-template-columns: auto;
+        grid-template-rows: min-content min-content;
+    }
+
+    .layoutAlterarDisponibilidade {
+        display: grid;
+        row-gap: 16px;
+        column-gap: 16px;
+        grid-template-columns: auto;
+        grid-template-rows: min-content min-content;
+    }
+    
+}
+
+@media only screen and (max-width: 970px) {
+    
+    .layoutMain {
+        display: grid;
+        row-gap: 16px;
+        column-gap: 32px;
+        padding: 16px;
+        padding-left:10%;
+        padding-right:10%;
+        grid-template-columns: min-content auto ;
+        grid-template-rows:  auto ;
+        margin-bottom: 120px;
+
+    }
+    
+
+    .layoutEmailSenha {
+        display: grid;
+        row-gap: 16px;
+        column-gap: 16px;
+        grid-template-columns: auto ;
+        grid-template-rows: min-content min-content;
+    }
+    
+}
+
+@media only screen and (max-width: 712px) {
+    
+    .layoutMain {
+        display: grid;
+        row-gap: 16px;
+        column-gap: 32px;
+        padding: 16px;
+        padding-left:10%;
+        padding-right:10%;
+        grid-template-columns:  auto ;
+        grid-template-rows:  min-content auto ;
+        margin-bottom: 120px;
+    }
+    
+    .layoutSalvarRemover {
+        display: grid;
+        row-gap: 16px;
+        column-gap: 16px;
+        grid-template-columns: min-content min-content;
+    }
+
+}
+
+@media only screen and (max-width: 560px) {
+    
+    
+    .layoutSalvarRemover {
+        display: grid;
+        row-gap: 16px;
+        column-gap: 16px;
+        grid-template-columns: auto;
+        grid-template-rows: min-content min-content;
+    }
+
+}
+
+@media only screen and (max-width: 430px) {
+    
+    .layoutBandeiraPrincipal {
+        display: grid;
+        row-gap: 20px;
+        column-gap: 16px;
+        padding-top: 12px;
+        padding-left: 7%;
+        padding-right: 2%;
+        grid-template-columns: auto ; 
+        grid-template-rows: auto min-content ; 
+        justify-content: center;
+    }
+
+}

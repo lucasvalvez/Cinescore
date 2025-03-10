@@ -1,0 +1,47 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: CineScore
+authors:
+  - family-names: Evers
+    given-names: Brenda 
+  - family-names: Dias dos Santos
+    given-names: Isabella Luiza 
+  - family-names: Ribeiro de Oliveira
+    given-names: Islayder Jackson 
+  - family-names: Pereira Clemente
+    given-names: Leandro Alencar 
+  - family-names: Valente Alves
+    given-names: Lucas 
+  - family-names: de Neiva Machado
+    given-names: Victor Rafael
+  - name-suffix: Professora
+    affiliation: PUC Minas
+    family-names: Alonso Veloso
+    given-names: Eveline 
+  - name-suffix: Professora
+    affiliation: PUC Minas
+    family-names: Baroni de Carvalho
+    given-names: Juliana Amaral 
+  - name-suffix: Professora
+    affiliation: PUC Minas
+    family-names: Norberta de Brito
+    given-names: Aline 
+    
+keywords:
+  - Recommendation System
+  - Movie Recommendations
+  - TV Series
+  - PostgreSQL
+  - Java SpringBoot
+  - Frontend Development
+  - Backend Development
+  - HTML
+  - CSS
+  - JavaScript
+  - Academic Project
+  - Software Engineering
+
+repository-code: https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-2-ti2-3687100-cinescore
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2024-12-10

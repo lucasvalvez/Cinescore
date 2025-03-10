@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/styles_cadastro.css">
+    <link rel="stylesheet" href="../../assets/css/auxilio.css">
+    <link rel="stylesheet" href="../../assets/css/cores.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>Formulário</title>
+    <link rel="stylesheet" href="../../assets/css/footer.css">
+
+</head>
+
+<body class="color_paleta01 V">
+    <div class="containerTela">
+
+        <div class="form-image radius_TL-BL_-20-">
+            <img src="../../assets/img/horror-movie-animate.svg" alt="">
+        </div>
+
+        <div class="form">
+
+            <form id="usuarioForm" action="#" class="rolagemY cartaoHV p-3 pe-5 P mt-3">
+
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                        <div class="h12 color_paleta04 radius_All_-10-"></div>
+                    </div>
+
+                    <div class="login-button">
+                        <a href="../usuario/usuario_login.html" class="textUnd botaoAnimaBom"> <img
+                                src="../../assets/img/iconeSetaEsquerda-00.png" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="layoutInput ">
+                    <div class="input-box layoutNome">
+                        <label for="firstname">Nome de usuario</label>
+                        <input id="nomeDeUsuario" type="text" name="nomeDeUsuario"
+                            placeholder="Digite seu primeiro nome" required>
+                    </div> 
+                    
+                    <div class="input-box layoutData">
+                        <label for="birthdate">Data de Nascimento</label>
+                        <input id="dataNascimento" type="date" name="dataNascimento" placeholder="Data de Nascimento"
+                            required>
+                    </div>
+
+                    <div class="input-box layoutEmail">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+                   
+                    <div class="input-box layoutSenha">
+                        <label for="password">Senha</label>
+                        <input id="senha" type="password" name="senha" placeholder="Digite sua senha" required>
+                    </div>
+
+                    <div class="input-box layoutConfirmarSenha">
+                        <label for="confirmPassword">Confirme sua Senha</label>
+                        <input id="confirmarSenha" type="password" name="confirmarSenha"
+                            placeholder="Digite sua senha novamente" required>
+                    </div>
+                </div>
+
+                <div class="continue-button">
+                    <button type="submit" class="continue-button">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+   
+    <script src="../../assets/js/usuario_cadastro.js"></script>
+</body>
+
+</html>

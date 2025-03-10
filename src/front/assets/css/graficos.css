@@ -1,0 +1,22 @@
+#feedbackChart {
+    display: block;
+    margin: 20px auto;
+    width: 60% !important;
+    height: 700px !important;
+}
+
+#deslikeChart
+{
+    display: block;
+    margin: 20px auto;
+    width: 60% !important;
+    height: 700px !important;
+}
+
+#likeChart
+{
+    display: block;
+    margin: 20px auto;
+    width: 60% !important;
+    height: 700px !important;
+}
